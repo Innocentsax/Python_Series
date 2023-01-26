@@ -1,0 +1,17 @@
+print("Getting to Know you with 100 Days of code")
+        print()
+
+        urName = input("What's your name?: ")
+        urFavFood = input("What's your favourite food: ")
+        urfavmus = input("What's your favourite Music? ")
+        location = input("Where do you live?: ")
+
+        print()
+        print("So you")
+        print(urName)
+        print("You're Probably hungry for")
+        print(urFavFood)
+        print("and you're definitely getting your groove on to")
+        print(urfavmus)
+        print("living in the amazing")
+        print(location)
