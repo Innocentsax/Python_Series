@@ -5,3 +5,5 @@ Day 4 - 100 Days of Code: ADDING COLOUR TO YOU OUTPUT.
 Day 5 - 100 Days of Code: Using IF-ELSE statement in Python
 Day 6 - 100 Days of Code: HOW TO USE ELIF STATEMENT IN PYTHON
 Day 7 - 100 Days of Code: USING NESTED IF IN PYTHON
+Day 7 - 100 Days of Code: HAPPY NEW MONTH TEXT USING IF STATEMENT
+Day 7 - 100 Days of Code: Data type with ELIF STATEMENT IN PYTHON
