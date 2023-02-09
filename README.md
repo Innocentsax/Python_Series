@@ -9,3 +9,4 @@ Day 8 - 100 Days of Code: HAPPY NEW MONTH TEXT USING IF STATEMENT
 Day 9 - 100 Days of Code: Data type with ELIF STATEMENT IN PYTHON
 Day 10 - 100 Days of Code: TIP CALCULATOR USING ARITHMETIC OPERATOR
 Day 11 - 100 Days of Code: How many seconds are in a year?
+Day 16 - 100 Days of Code:How to use the BOOLAN METHOD IN WHILE LOOP
