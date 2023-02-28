@@ -225,3 +225,20 @@ while guess_number != answer:
       print("\nYou are out of attempt")
       break
     print(f"\nYou have {turns} attempts remainings to guess the number \n")
+    
+    
+    
+    
+    random_set = {"Education", 100, 3.16, (True, False)}
+#print(len(random_set))
+random_set.discard(100)# discard element from a list
+random_set.remove(3.16)#also works as discard but in this case, it print error if the item is not in the list
+print(random_set)
+
+
+#Addition of list in a set
+empty_set = set()
+empty_set.add(1)
+empty_set.add(2)
+empty_set.update({3, 4, 5, 6, 7})
+print(empty_set)
