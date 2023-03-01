@@ -1,4 +1,25 @@
-#Personal Lessons
+# Personal Lesson on Dictionary
+"""Dictionaries: A collection of key-value pairs separated by commas
+      CHECK: Check up the methods in Dictionaries"""
+mdict = {"Math":78, "Sci": 96}
+#print(mdict["Sci"])
+# for m in mdict:
+#   print(mdict[m])
+
+# for subject in mdict.items():
+#   print(subject)
+
+# for subject in mdict.values():
+#   print(subject)
+
+for subject, score in mdict.items():
+  print(f"Subject: {subject} and Score: {score}")
+
+md = {"a":45, "b":46}
+md["c"] = 69
+print(md)
+
+#Personal Lessons on TUPLE
 """TUPLE ( A collection of data that are immutable)
 feature: Heterogeous, order, indexeable.
 
