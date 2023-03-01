@@ -1,3 +1,39 @@
+#Personal Lessons
+"""TUPLE ( A collection of data that are immutable)
+feature: Heterogeous, order, indexeable.
+
+Declaration of Tuples:
+
+score = 80, 75, 56, 20  #multiple tuple
+score = (80, 75, 56, 20) #muliple tuple
+score = 95,   #single tuple
+score = (95,) #single tuple
+"""
+#scores = 80, 75, 56, 20
+# for score in scores:
+#   for i in range(len(scores)):
+#     print(f"{i} : {score}")
+
+#Swapping 2 number:
+a = 10
+b = 20
+print(f"a: {a} and b: {b}")
+# swapping the values of a snd b. let a = 20 and a = 10
+
+temp = a  #temp = 10
+a = b     # a = 20
+b = temp  # b = 10
+print(f"a: {a} and b: {b}")
+
+# Using tuples to swap the number
+#a, b = b, a
+#print(f"a: {a} and b: {b}")
+a, b == b, a
+print(f"a: {a} and b: {b}")
+
+
+
+
 import random
 print("==> NUMBER GUESSING GAME <==")
 
