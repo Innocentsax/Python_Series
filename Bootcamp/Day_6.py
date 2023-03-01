@@ -1,3 +1,27 @@
+# Personal lesson on Set
+"""SET: Set is a collection of unique Data. i.e the element can't be duplicated.
+
+features: a. non-indexables
+         b. not ordered
+         c. heterogenous and immutable
+         
+Operations: Union()
+            intersection() 
+            difference()
+            symmetric difference()
+
+"""
+neu = {3, 5, 6}
+myset = {3, 2,3, 5, 6}
+#myset.union(myset)
+#myset.intersection(neu)
+#myset & neu
+#myset.difference(neu)
+#myset - neu
+#myset.symmetric_difference(neu)
+myset ^ neu
+print(myset)
+
 # Personal Lesson on Dictionary
 """Dictionaries: A collection of key-value pairs separated by commas
       CHECK: Check up the methods in Dictionaries"""
