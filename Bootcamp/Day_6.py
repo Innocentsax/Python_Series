@@ -1,3 +1,30 @@
+# Creating a class
+class Cristal:
+  #Attribute
+  color = "Blue"
+
+  #Magic method
+  def __init__(self, id):
+    self.id = id
+    print("You just created an object")
+
+
+  #Method 
+  def write(self):
+    print("Hey! I am writing")
+
+#Instantiation: create an instance of the class => Object
+first_pen = Cristal(id="QP-67")
+#using the method
+first_pen.write()
+# Access the Attribute
+print(first_pen.color)
+print(f"Color of first pen is {first_pen.color}")
+print(f"ID of first pen is {first_pen.id}")
+second_pen = Cristal(id="QQ-43")
+print(f"Color of second pen is {second_pen.color}")
+print(f"ID of first pen is {second_pen.color}")
+
 # FUNCTIONS IN PYTHON
 def callname(name, yob, curyr):
   
