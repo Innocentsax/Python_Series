@@ -1,3 +1,75 @@
+# FUNCTIONS IN PYTHON
+def callname(name, yob, curyr):
+  
+  dob = curyr - yob
+  print(f"Your name is {name}, and you are {dob} years old\n\n")
+
+callname("Innocent", 1996, 2023)# Order 1: Positional argument
+callname(curyr=2023, name="Innocent", yob=1996)# Order 2: Scattered argument but using key word
+callname("Charles", 1999, 2023)
+callname("udo", 1987, 2023)
+
+print("==> BMI CALCULATOR (M = height, kg = weight <==")
+
+def bmi_cal(weight, height):
+  bmi = weight // (height ** 2)
+  print(f"Your BMI is {bmi}")
+
+user_weg = float(input("kindly enter your weight: "))
+user_heg = float(input("Kindly enter your weight: "))
+bmi_cal(user_weg, user_heg)
+
+# How to use the return Statement
+def bmi_cal(weight, height):
+  bmi = weight // (height ** 2)
+  return bmi
+
+bb_bmi = bmi_cal(70, 1.76)
+aa_bmi = bmi_cal(65, 1.72)
+
+if bb_bmi > aa_bmi:
+  print("BB is heavier than AA")
+else:
+  print("AA is heavier than BB")
+  
+#How to use the return Statement 2
+def bmi_cal(weight, height):
+  bmi = weight // (height ** 2)
+  weight_cm = weight * 100 #BMI weight in cm
+  return (bmi, weight_cm) #returning too variable: You can either return it into  a TUPLE, LIST, DICTIONARIES AND SET i.e collection of data
+
+bb_bmi, weight_in_cm = bmi_cal(70, 1.76)  
+print(bb_bmi)
+print(weight_in_cm)
+
+
+#How to use the return statement 3 with other paramenter
+def greeting(fname, lname, title="Mr/Mrs", mname=None):
+  if mname is not None:
+    str_to_return = f"Hi {title}, Your full name is {fname} {mname} {lname}"
+  else:
+    str_to_return = f"Hi {title}, Your full name is {fname} {lname}"
+  return str_to_return
+
+Inno = greeting(fname="Innocent",lname="Udo", title="Mr")
+print(Inno)
+
+
+def greet_user(*args): # TUPLE: each time you add * to you parameter, it turn it to a tuple.
+  print(f"Hi {args}")
+
+greet_user("Innocent", "Charles", "Udo")
+
+#DICTIONARIES: **kwargs convert it to Dictionary
+def greet_user(**kwargs):
+  for key in kwargs:
+    #print(kwargs[key])
+    print(f"{key} = {kwargs[key]}")
+
+{"fnname" : "Innocent", "lname" : "Udo"}
+greet_user(fname="Innocent", lname="Charles", num=99)
+
+
 # Personal lesson on Set
 """SET: Set is a collection of unique Data. i.e the element can't be duplicated.
 
