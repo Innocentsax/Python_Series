@@ -1,0 +1,20 @@
+"""WHILE LOOP IN PYTHON"""
+import os, time
+
+labour_party = 'Winner'
+while True:
+  vote = input("Did you vote YES/NO> ").upper()
+
+  if vote == "YES":
+    print("We have a future")
+    break
+  elif vote == "NO":
+    print("Why didn't you vote")
+    time.sleep(1)
+    print("1. Voters card problem")
+    time.sleep(2)
+    print("2. Underage")
+    time.sleep(2)
+    print("3. Distance to polling unit")
+    time.sleep(2)
+    print("4. Election violence\n")
