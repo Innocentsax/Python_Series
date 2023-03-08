@@ -34,3 +34,20 @@ while guess_number != answer:
       print("\nYou are out of attempt")
       break
     print(f"\nYou have {turns} attempts remainings to guess the number \n")
+
+    
+    
+    
+    #Random number 2
+    import random
+
+
+class Dice:
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+
+
+dice = Dice()
+print(dice.roll())
