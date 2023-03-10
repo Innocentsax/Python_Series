@@ -1,3 +1,17 @@
+# How to navigate using Absolute path
+from pathlib import Path
+
+# Types of path in Python
+# Absolute path and Relative Path
+
+path = Path("ecommerce")
+print(path.mkdir()) # mkdir makes a new directory
+print(path.rmdir()) # rmdir removes the directory
+print(path.glob('*.py'))
+for file in path.glob('*.py'): #print all the py file in your current directory
+    print(file)
+
+
 print("==> Day 3 <==")
 #FUNCTIONS IN PYYHON
 
