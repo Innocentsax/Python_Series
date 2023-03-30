@@ -1,3 +1,89 @@
+# Class Attribute in Python
+
+class Person:
+  number_of_people = 0
+  GARVITY = -9.8
+
+  def __init__(self, name):
+    self.name = name
+    #Person.number_of_people += 1
+    Person.add_person()
+
+  # ClassMethod in Python
+  @classmethod
+  def number_of_people(cls):
+    return cls.number_of_people
+
+  @classmethod
+  def add_person(cls):
+    cls.number_of_people += 1
+    
+
+p1 = Person("Tim")
+print(Person.number_of_people())
+#print(Person.number_of_people)
+p2 = Person("Jill")
+print(Person.number_of_people)
+Person.number_of_people = 8
+print(p2.number_of_people)
+Person.number_of_people = 91
+print(p1.number_of_people)
+
+# Inheritance in Python
+class Pet:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def show(self):
+    print(f"I am {self.name} and i am {self.age} year old")
+    
+class Cat(Pet):
+  def __init__(self, name, age, color):
+    super().__init__(name, age)
+    self.color = color
+
+  def show(self):
+    print(f"i am {self.name}, {self.age} and {self.color}")
+    
+  def speak(self):
+    print("meow")
+
+class Dog(Pet):
+  def speak(self):
+    print("Bark")
+
+# instance of the Pet Class
+p = Pet("Tim", 34)
+p.show()
+c = Cat("Tiwiwi", 67, "blue")
+c.show()
+d = Dog("Dilian", 32)
+d.show()
+
+# Instance of the Cat and Dog
+c = Cat("Tiwiwi", 67, "Brown")
+c.speak()
+d = Dog("Dilian", 32)
+d.speak()
+
+Repeated class model... convert it to a single model call inheritance
+class Cat:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def speak(self):
+    print("Meow")
+
+class Dog:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def speak(self):
+    print("Bark")
+
 Basics of Classes
 class Student:
   def __init__(self, name, age, grade):
