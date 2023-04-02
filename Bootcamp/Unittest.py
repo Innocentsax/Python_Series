@@ -206,3 +206,91 @@ class TestEmployee(unittest.TestCase):
 
 if __name__ == '__main__':
   unittest.main()
+
+# unitT function to be imported by the main function
+import requests
+class Employee:
+  """A simple employee class"""
+  raise_amt = 1.05
+  def __init__(self, first, last, pay):
+    self.first = first
+    self.last = last
+    self.pay = pay
+
+  @property
+  def email(self):
+    return '{}.{}@email.com'.format(self.first, self.last)
+
+  @property
+  def fullname(self):
+    return '{} {}'.format(self.first, self.last)
+
+  def apply_raise(self):
+    return int(self.pay * self.raise_amt)
+
+  def monthly_schedule(self, month):
+    response = requests.get(f'http://company.com/{self.last}/{month}')
+    if response.ok:
+      return response.text
+    else:
+      return 'Bad Response'
+  
+  
+ #Lesson 0 // Call the Calc function
+import unittest
+import Calc
+
+
+class TestCalc(unittest.TestCase):
+
+    # def test_add(self):
+    #     result = Calc.addition(10, 5)
+    #     self.assertEqual(result, 15)
+
+    def test_add(self):
+        self.assertEqual(Calc.addition(10, 5), 15)
+        self.assertEqual(Calc.addition(-1, 1), 0)
+        self.assertEqual(Calc.addition(-1, -1), -2)
+
+    def test_substract(self):
+        self.assertEqual(Calc.subtract(10, 5), 5)
+        self.assertEqual(Calc.subtract(-1, 1), -2)
+        self.assertEqual(Calc.subtract(-1, -1), -0)
+
+    def test_multiply(self):
+        self.assertEqual(Calc.multiply(10, 5), 50)
+        self.assertEqual(Calc.multiply(-1, 1), -1)
+        self.assertEqual(Calc.multiply(-1, -1), 1)
+
+    def test_divide(self):
+        self.assertEqual(Calc.divide(10, 5), 2)
+        self.assertEqual(Calc.divide(-1, 1), -1)
+        self.assertEqual(Calc.divide(-1, -1), 1)
+
+        #self.assertRaises(ValueError, Calc.divide, 10, 0)
+        with self.assertRaises(ValueError):
+            Calc.divide(10, 0)
+
+if __name__ == '__main__':
+    unittest.main()
+    
+#Calc function to be imported in the main function
+ def addition(x, y):
+    """Add function"""
+    return x + y
+
+
+def subtract(x, y):
+    """Subtract function"""
+    return x - y
+
+
+def multiply(x, y):
+    """Multiply function"""
+    return x * y
+
+def divide(x, y):
+    """Division function"""
+    if y == 0:
+        raise ValueError('can not divide by 0')
+    return x / y
